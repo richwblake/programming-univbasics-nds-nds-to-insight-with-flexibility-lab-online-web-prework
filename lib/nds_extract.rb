@@ -90,7 +90,10 @@ def movies_with_directors_set(source)
   director_movie_array = [[]]
   
   while director_index < source.size do
-    while movie_index < source[director_index][:movies]
+    while movie_index < source[director_index][:movies].length do
+      
+      movie_index += 1
+    end
     director_index += 1
   end
 end
