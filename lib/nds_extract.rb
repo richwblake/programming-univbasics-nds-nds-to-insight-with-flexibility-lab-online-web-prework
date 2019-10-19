@@ -76,9 +76,9 @@ def gross_per_studio(collection)
   studio_gross_totals = Hash.new
   
   # Setting up studio hash with studio names
-  while director_index < source.size do
-    if !( studio_gross_totals.has_key? 'source[director_index][:studio]' )
-      studio_gross_totals[source[director_index][:studio]] = 0
+  while director_index < collection.size do
+    if !( studio_gross_totals.has_key? 'collection[director_index][:studio]' )
+      studio_gross_totals[collection[director_index][:studio]] = 0
     end
     director_index += 1
   end
