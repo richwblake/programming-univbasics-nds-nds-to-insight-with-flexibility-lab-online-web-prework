@@ -84,7 +84,7 @@ def gross_per_studio(collection)
   director_index = 0
   
   while director_index < collection.size do
-    studio_gross_totals.merge([collection[director_index][:studio]] += collection[director_index][:worldwide_gross]
+    studio_gross_totals[collection[director_index][:studio]] += collection[director_index][:worldwide_gross]
     director_index += 1
   end
   studio_gross_totals
