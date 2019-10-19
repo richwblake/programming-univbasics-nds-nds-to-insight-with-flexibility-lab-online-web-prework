@@ -75,6 +75,8 @@ def gross_per_studio(collection)
   director_index = 0
   studio_gross_totals = Hash.new
   
+  # Setting up studio hash 
+  
   while director_index < collection.size do
     studio_gross_totals.merge([collection[director_index][:studio]] += collection[director_index][:worldwide_gross]
     director_index += 1
