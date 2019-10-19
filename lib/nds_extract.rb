@@ -77,6 +77,7 @@ def gross_per_studio(collection)
   
   # Setting up studio hash with studio names
   while director_index < source.size do
+    if studio_gross_totals.haskey?
     director_index += 1
   end
   
