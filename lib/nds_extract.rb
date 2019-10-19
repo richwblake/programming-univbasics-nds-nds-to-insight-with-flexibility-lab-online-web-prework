@@ -79,6 +79,7 @@ def gross_per_studio(collection)
   while director_index < source.size do
     if !( studio_gross_totals.has_key? source[director_index][:studio] )
       studio_gross_totals[source[director_index][:studio]] = 0
+    end
     director_index += 1
   end
   director_index = 0
