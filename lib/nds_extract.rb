@@ -72,6 +72,13 @@ def gross_per_studio(collection)
   #
   # Hash whose keys are the studio names and whose values are the sum
   # total of all the worldwide_gross numbers for every movie in the input Hash
+  total_gross = 0
+  director_index = 0
+  
+  while director_index < collection.size do
+    
+  end
+  
 end
 
 def movies_with_directors_set(source)
